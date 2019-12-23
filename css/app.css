@@ -1,0 +1,82 @@
+body {
+  background-color: #ccc;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+#survey-form {
+  background-color: white;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: 500px;
+  width: 80%;
+  margin: 10px auto 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#name {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px 10px 5px 10px;
+}
+
+#email {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px 10px 5px 10px;
+}
+
+#number {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px 10px 5px 10px;
+}
+
+select {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#name-label {
+  margin-bottom: 5px;
+}
+
+#email-label {
+  margin-bottom: 5px;
+}
+
+#number-label {
+  margin-bottom: 5px;
+}
+
+#dropdown-label {
+  margin-bottom: 5px;
+}
+
+#textarea {
+  resize: vertical;
+  min-height: 50px;
+  max-height: 150px;
+}
+
+#submit {
+  height: 40px;
+  width: 100px;
+  margin: 0 auto 0 auto;
+  border-radius: 5px;
+  box-shadow: none;
+  border: none;
+  background-color: #000;
+  color: white;
+}
