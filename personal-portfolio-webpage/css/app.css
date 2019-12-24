@@ -1,0 +1,94 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(300px);
+  scroll-snap-type: y mandatory;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #ccc;
+  margin: 0;
+  z-index: 1;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 500px) {
+  #navbar {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .navbar-link {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px 0 10px 0;
+  }
+
+  #welcome-section-navbar {
+    background-color: #222;
+  }
+
+  #projects-navbar {
+    background-color: #444;
+  }
+
+  #contact-me-navbar {
+    background-color: #666;
+  }
+}
+
+#welcome-section {
+  text-align: center;
+  position: relative;
+  top: 50px;
+  height: 100vh;
+  background-color: #eee;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-type: mandatory;
+  scroll-snap-align: start;
+}
+
+#projects {
+  position: relative;
+  text-align: center;
+  background-color: #aaa;
+  top: 50px;
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+#contact-me {
+  position: relative;
+  text-align: center;
+  background-color: #999;
+  top: 50px;
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  scroll-snap-type: mandatory;
+  scroll-snap-align: start;
+}
