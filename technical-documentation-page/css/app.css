@@ -1,0 +1,35 @@
+@media (min-width: 850px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #ccc;
+    z-index: 1;
+  }
+}
+
+a {
+  display: block;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.main-section {
+  position: relative;
+  left: 200px;
+}
+
+@media (max-width: 850px) {
+  .main-section {
+    left: 0;
+  }
+}
+
+header {
+  font-weight: 600;
+  font-size: 16;
+}
