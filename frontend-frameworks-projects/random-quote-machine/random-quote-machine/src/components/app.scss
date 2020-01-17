@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
-  background-size: 1260px 750px;
+  background-size: cover;
 }
 
 #quote-box {
@@ -27,12 +27,14 @@
   border: 1px solid black;
   border-radius: 15px;
   padding: 10px;
+  margin: 0 5px 0 5px;
 }
 
 @media (min-width: 500px) {
   #quote-box {
     height: 80vh;
     width: 80vh;
+    margin: 0;
   }
 }
 
