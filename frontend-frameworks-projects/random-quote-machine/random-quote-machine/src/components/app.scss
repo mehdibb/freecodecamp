@@ -1,0 +1,70 @@
+* {
+  // font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: 1260px 750px;
+}
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: white, $alpha: 0.8);
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+@media (min-width: 500px) {
+  #quote-box {
+    height: 80vh;
+    width: 80vh;
+  }
+}
+
+#text {
+  font-size: large;
+  margin: 0 5px 15px 5px;
+}
+
+#author {
+  margin: 0 5px 15px 5px;
+}
+
+#new-quote {
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 35px;
+  font-size: 14px;
+  margin: 0 5px 15px 5px;
+  cursor: pointer;
+}
+
+#new-quote:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+#tweet-quote {
+  text-decoration: none;
+  color: black;
+}
